@@ -1,0 +1,276 @@
+﻿
+//====================================================================*/
+//                                                            imports */
+//====================================================================*/
+@import "fonts.less";
+
+//====================================================================*/
+//                                                          variables */
+//====================================================================*/
+@body-container-width: 1920px;
+@header-heght: 1024px;
+@header-get-started-btn-color: #998675;
+
+
+//====================================================================*/
+//                                                               init */
+//====================================================================*/
+body{
+    margin: 0 0 0 0; //По умолчанию body имел отступы.
+}
+
+.body-container{
+    width: @body-container-width;
+    margin: 0 auto;
+}
+
+//====================================================================*/
+//                                                             header */
+//====================================================================*/
+.header{
+    height: @header-heght;
+    background-image: url("../img/header-photo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative; //Дочерние элементы будут позицонированы свойством position:absolute;
+}
+
+.header-shadow-container { //Затемнение фона.
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+
+    //Это flex контэйнер для 3х элементов:
+    // - .header-top-bar;
+    // - .header-carousel;
+    // - .header-pagination;
+    display: flex;
+    flex-direction: column; //Основная ось - по вертикали.
+    justify-content: space-between;
+   }
+
+//.header-logo{border: 1px solid gold;}
+.header-logo{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between; //Выравнивание по горизонтали.
+    align-items: center; //Выравнивание по вертикали.
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 376px;
+    color: white;
+}
+.header-logo-txt{
+    font-family: Raleway, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    letter-spacing: -1.36px;
+}
+#header-logo-svg-id{
+    fill: white;
+}
+.header-logo:hover #header-logo-svg-id{
+    fill:  navajowhite;
+}
+.header-logo:hover .header-logo-txt{
+    color: navajowhite;
+}
+
+//.header-top-bar{border: 1px solid lightgreen;}
+.header-top-bar{
+
+    margin-top: 55px;
+    margin-left: 776px;
+    display: flex;
+    align-items: center; //Выравнивание по вертикали дочерних элементов.
+}
+
+//.header-nav{ border: 1px solid gold;}
+.header-nav-item{
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.header-nav-item:nth-child(1){
+    margin-left: 0px;
+}
+.header-nav-item:hover{
+    color: #c7b299;
+}
+
+.header-bin-button{
+    background-color: transparent;
+    border: none;
+    margin-left: 60px;
+}
+.header-bin-button:focus{
+    outline: none;
+}
+#header-bin-svg-id{
+    fill: white;
+}
+.header-bin-button:hover  #header-bin-svg-id{
+    fill: #c7b299;
+}
+
+.header-input-search{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image: url("../img/icon-search-white.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 20px;
+}
+.header-input-search:hover{
+    background-image: url("../img/icon-search-hover.svg");
+}
+.header-input-search:focus{
+    border: 1px solid gray;
+    background-color: lightpink;    
+    background-image: url("../img/icon-search-focus.svg");
+    padding-right: 30px;
+    width: 300px;
+    transition: width 1s ease-out;
+}
+//Убираем крестик очистки. IE.
+.header-input-search::-ms-clear{  display: none; }
+//Убираем крестик очистки. Chrome, FireFox, Opera.
+.header-input-search::-webkit-search-cancel-button{ display: none; }
+
+
+//.header-carousel{ border: 1px solid lightgreen;}
+.header-carousel{
+    //Это flex контэйнер для 3х элементов:
+    // - .header-carousel-row-left;
+    // - .header-carousel-container;
+    // - .header-carousel-row-right;
+    display: flex;
+    justify-content: space-between; //По горизонтали.
+    align-items: center;            //По вертикали.
+}
+
+.header-carousel-row-left{
+    margin-left: 150px;
+}
+.header-carousel-row-right{
+    margin-right: 150px;
+}
+.header-carousel-row-left-svg,
+.header-carousel-row-right-svg{
+    opacity: .5;
+    fill: #fff;
+}
+
+//Навожу курсор на ссылку, а стилизую svg картинку.
+.header-carousel-row-left:hover .header-carousel-row-left-svg,
+.header-carousel-row-right:hover .header-carousel-row-right-svg{
+    opacity: 1;
+    fill: #d3c1ad;
+}
+
+.header-carousel-container{
+    text-align: center; //По горизонтали.
+}
+.header-carousel-title1{
+    display: block;
+    //border: 1px solid black;
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #ffffff;
+}
+.header-carousel-title2{
+    display: block;
+    //border: 1px solid black;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 52px;
+    color: #ffffff;
+}
+
+.header-carousel-txt{
+    display: block;
+    //border: 1px solid black;
+    margin: 0 auto 52px auto;
+    width: 580px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.header-carousel-ref-button{
+    display: flex;           //Выравниваем текст внутри кнопки.
+    justify-content: center; //По горизонтали.
+    align-items: center;     //По вертикали.
+    //border: 1px solid black;
+    width: 170px;
+    height: 53px;   
+    margin: 0 auto; //Выравниваем саму кнопку.
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: @header-get-started-btn-color;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #736357;
+}
+.header-carousel-ref-button:hover{ //Наведение.
+    background-color: @header-get-started-btn-color - #101;
+}
+.header-carousel-ref-button:active{ //Нажатие.
+    box-shadow: 0px 2px 0px 0px #736357;
+    transform: translateY(2px);
+}
+
+//.header-pagination{ border: 1px solid lightpink;}
+.header-pagination{
+    min-height: 50px;
+    width: 140px;
+    margin: 0 auto;
+
+    //Это flex контэйнер для кружочков пагинации.
+    display: flex;
+    justify-content: space-between;
+}
+.header-pagination-item{ //Это кружочки пагинации.
+    width: 11px;
+    height: 11px;
+    background-color: #8e8f91;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.header-pagination-item:hover{
+    background-color: transparent;
+    border: 2px solid #8e8f91;
+    transform: scale(1.2);
+}
+
+//====================================================================*/
+//                                                block2. 4 pictures. */
+//====================================================================*/
+
+
+
+
+

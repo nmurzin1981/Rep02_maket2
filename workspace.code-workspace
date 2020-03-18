@@ -1,0 +1,17 @@
+
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+
+	"settings": {
+
+		"less.compile": {
+			"out": "${workspaceRoot}\\css\\"
+		}
+	}
+	
+}
+

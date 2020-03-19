@@ -187,7 +187,7 @@ body{
 .header-carousel-title1{
     display: block;
     //border: 1px solid black;
-    font-family: Raleway;
+    font-family: Raleway, Verdana, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 36px;
@@ -196,7 +196,7 @@ body{
 .header-carousel-title2{
     display: block;
     //border: 1px solid black;
-    font-family: "Raleway";
+    font-family: Raleway, Verdana, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 52px;
@@ -208,7 +208,7 @@ body{
     //border: 1px solid black;
     margin: 0 auto 52px auto;
     width: 580px;
-    font-family: Montserrat;
+    font-family: Montserrat, Verdana, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
@@ -226,7 +226,7 @@ body{
     margin: 0 auto; //Выравниваем саму кнопку.
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Raleway";
+    font-family: Raleway, Verdana, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 14px;
@@ -270,7 +270,65 @@ body{
 //                                                block2. 4 pictures. */
 //====================================================================*/
 
+.block2{
+    background-color: white;
+    padding: 80px 0 80px 0; //12,3,6,9.
+    display: flex;
+    justify-content: center;
+}
+
+.block2-item{
+    width: 280px;
+    margin-left: 33px;
+    text-align: center;
+}
+.block2-item:nth-child(1){
+    margin-left: 0;
+}
+.block2-item:after{ //Подчеркивание под блоком.
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin: 0 auto;
+}
 
 
+.block2-item-title{
+    display: block;
+    font-family: Raleway, Verdana, sans-serif;
+    font-weight: 600;
+    font-style: normal; 
+    font-size: 22px;
+    color: #555555;
+    margin-top: 29px;
+}
+
+.block2-item-txt{
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8c8c8c;
+    margin: 19px 0 33px 0; //12,3,6,9.
+}
+
+.block2-item-svg{
+    fill: #555;
+}
+//Навел на блок, стилизовал дочерний элемент.
+.block2-item:hover .block2-item-svg{ 
+    fill: #c7b299;
+}
+//Навел на блок, стилизовал дочерний элемент.
+.block2-item:hover .block2-item-title{
+    color: #c7b299;
+}
+//Навел на блок, стилизовал дочерний элемент.
+.block2-item:hover:after{ //Подчеркивание. Сначала hover потом after!
+    background-color: #c7b299;
+}
 
 

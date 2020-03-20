@@ -52,6 +52,30 @@
   font-weight: 400;
   font-style: normal;
 }
+.ref-button-type1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #736357;
+}
+.ref-button-type1-hover {
+  background-color: #888664;
+}
+.ref-button-type1-active {
+  box-shadow: 0px 2px 0px 0px #736357;
+  transform: translateY(2px);
+}
 body {
   margin: 0 0 0 0;
 }
@@ -224,8 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 170px;
-  height: 53px;
-  margin: 0 auto;
+  height: 50px;
   text-transform: uppercase;
   text-decoration: none;
   font-family: Raleway, Verdana, sans-serif;
@@ -236,6 +259,7 @@ body {
   background-color: #998675;
   border-radius: 10px;
   box-shadow: 0px 4px 0px 0px #736357;
+  margin: 0 auto;
 }
 .header-carousel-ref-button:hover {
   background-color: #888664;
@@ -369,4 +393,53 @@ body {
 }
 .ideas-img-right:hover {
   z-index: 1;
+}
+.wordpress-advertising {
+  min-height: 150px;
+  background-color: #231c19;
+  padding: 50px 50px 0 370px;
+}
+.wordpress-advertising-ref-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #736357;
+  float: right;
+}
+.wordpress-advertising-ref-button:hover {
+  background-color: #888664;
+}
+.wordpress-advertising-ref-button:active {
+  box-shadow: 0px 2px 0px 0px #736357;
+  transform: translateY(2px);
+}
+.wordpress-advertising-title {
+  display: block;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  color: #ffffff;
+}
+.wordpress-advertising-title-waxom {
+  color: #c7b299;
+}
+.wordpress-advertising-txt {
+  display: block;
+  font-family: Montserrat, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #615855;
 }

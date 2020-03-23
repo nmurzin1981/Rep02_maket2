@@ -445,3 +445,188 @@ body {
   font-size: 18px;
   color: #615855;
 }
+.our-pjt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 374px 80px 374px;
+}
+.our-pjt-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: #555555;
+  margin: 0 0 24px 0;
+}
+.our-pjt-txt {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0 201px 0 201px;
+  font-family: Montserrat, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c8c8c;
+  margin: 0 0 40px 0;
+}
+.our-pjt-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+.our-pjt-menu-button {
+  font-family: Montserrat, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #8c8c8c;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  margin-left: 10px;
+}
+.our-pjt-menu-button:nth-child(1) {
+  margin-left: 0;
+}
+.our-pjt-menu-button:hover {
+  background-color: #998675;
+  color: white;
+}
+.our-pjt-menu-button:active {
+  background-color: #53483e;
+}
+.our-pjt-menu-button:focus {
+  outline: none;
+}
+.our-pjt-figure {
+  margin: 0 0 0 30px;
+}
+.our-pjt-figure:nth-child(4),
+.our-pjt-figure:nth-child(7) {
+  margin-left: 0;
+}
+.our-pjt-figure:nth-child(4),
+.our-pjt-figure:nth-child(5),
+.our-pjt-figure:nth-child(6) {
+  margin-bottom: 30px;
+}
+.our-pjt-figure:nth-child(7),
+.our-pjt-figure:nth-child(8),
+.our-pjt-figure:nth-child(9) {
+  margin-bottom: 40px;
+}
+.our-pjt-figure {
+  position: relative;
+}
+.our-pjt-figure:hover .our-pjt-figure-shadow {
+  visibility: visible;
+}
+.our-pjt-figure:hover .our-pjt-figure-caption {
+  background-color: #362f2d;
+}
+.our-pjt-figure:hover .our-pjt-figure-caption:before {
+  border-bottom-color: #362f2d;
+}
+.our-pjt-figure:hover .our-pjt-figure-title {
+  color: white;
+}
+.our-pjt-figure:hover .our-pjt-figure-comment {
+  color: #c7b299;
+}
+.our-pjt-figure-shadow {
+  position: absolute;
+  width: 370px;
+  height: 237px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-pjt-figure-lupa-ref {
+  margin-left: 25px;
+}
+.our-pjt-figure-lupa-svg,
+.our-pjt-figure-link-svg {
+  fill: #c7b299;
+}
+.our-pjt-figure-lupa-ref:hover .our-pjt-figure-lupa-svg {
+  fill: white;
+}
+.our-pjt-figure-link-ref:hover .our-pjt-figure-link-svg {
+  fill: white;
+}
+.our-pjt-figure-img {
+  display: block;
+  width: 370px;
+  height: 237px;
+}
+.our-pjt-figure-caption {
+  padding: 30px 30px 30px 30px;
+  background-color: #fbfaf8;
+  position: relative;
+}
+.our-pjt-figure-caption:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fbfaf8;
+}
+.our-pjt-figure-title {
+  display: block;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #c7b299;
+  margin-bottom: 15px;
+}
+.our-pjt-figure-comment {
+  display: block;
+  font-family: Montserrat, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+.our-pjt-button-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Raleway, Verdana, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #736357;
+  border: none;
+}
+.our-pjt-button-load-more:hover {
+  background-color: #888664;
+}
+.our-pjt-button-load-more:active {
+  box-shadow: 0px 2px 0px 0px #736357;
+  transform: translateY(2px);
+}
+.our-pjt-button-load-more:focus {
+  outline: none;
+}

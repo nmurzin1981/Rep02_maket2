@@ -432,4 +432,197 @@ body{
     color: #615855;
 }
 
+//====================================================================*/
+//                                               Our Latest Projects. */
+//====================================================================*/
 
+.our-pjt{
+    display: flex;
+    flex-wrap: wrap; //Разрешен перенос на другую строку.
+    justify-content: center; //Выравнивание по горизотнали.
+    padding: 80px 374px 80px 374px; //12,3,6,9.
+}
+
+.our-pjt-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Raleway, Verdana, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: #555555;
+    margin: 0 0 24px 0; //12,3,6,9.
+}
+.our-pjt-txt{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 201px 0 201px; //12,3,6,9.
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+    margin: 0 0 40px 0; //12,3,6,9.
+}
+
+.our-pjt-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center; //Выравнивание по горизотнали.
+    margin: 0 0 40px 0; //12,3,6,9.
+}
+
+.our-pjt-menu-button{
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    font-size: 14px;
+    color: #8c8c8c;
+    background-color: white;
+    padding: 10px 20px 10px 20px; //12,3,6,9.
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+.our-pjt-menu-button:nth-child(1){
+    margin-left: 0;
+}
+.our-pjt-menu-button:hover{ //Наведение на кнопку.
+    background-color: #998675;
+    color: white;
+}
+.our-pjt-menu-button:active{ //Нажатие на кнопку.
+    background-color: #53483e
+}
+.our-pjt-menu-button:focus{ //После того как отпустили кнопку.
+    outline: none;
+}
+
+.our-pjt-figure{
+    margin: 0 0 0 30px; //12,13,6,9
+}
+.our-pjt-figure:nth-child(4),
+.our-pjt-figure:nth-child(7){
+    margin-left: 0;
+}
+.our-pjt-figure:nth-child(4),
+.our-pjt-figure:nth-child(5),
+.our-pjt-figure:nth-child(6){
+    margin-bottom: 30px;
+}
+.our-pjt-figure:nth-child(7),
+.our-pjt-figure:nth-child(8),
+.our-pjt-figure:nth-child(9){
+    margin-bottom: 40px;
+}
+.our-pjt-figure{
+    //Дочерний контэйнер с тенью будет размещен с помощью position:absolute;
+    position: relative; 
+}
+//При наведении отображается контэйнер с тенью.
+.our-pjt-figure:hover  .our-pjt-figure-shadow{
+    visibility: visible;
+}
+//При наведении меняется цвет фона для текста под картинкой.
+.our-pjt-figure:hover  .our-pjt-figure-caption{
+    background-color: #362f2d;
+}
+//При наведении меняется цвет декоративного треугольника.
+.our-pjt-figure:hover  .our-pjt-figure-caption:before{
+    border-bottom-color:  #362f2d;;
+ }
+ //При наведении меняется цвет текста под картинкой.
+.our-pjt-figure:hover  .our-pjt-figure-title{
+    color: white;
+}
+.our-pjt-figure:hover  .our-pjt-figure-comment{
+    color: #c7b299;
+}
+
+//Это контэйнер с тенью, который содержит две ссылки-иконки.
+.our-pjt-figure-shadow{
+    position: absolute;
+    width: 370px;
+    height: 237px;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    visibility: hidden; //По умолчанию его не видно !!!.
+
+    //Это flex контэнер для элементов:
+    // - our-pjt-figure-link-ref;
+    // - our-pjt-figure-lupa-ref;
+    display: flex;
+    justify-content: center; //Выравнивание дочерних элементов по горизонтали.
+    align-items: center; //Выравнивание дочерних элементов по вертикали.
+}
+.our-pjt-figure-lupa-ref{
+    margin-left: 25px;
+}
+.our-pjt-figure-lupa-svg,
+.our-pjt-figure-link-svg{
+    fill: #c7b299;
+}
+.our-pjt-figure-lupa-ref:hover  .our-pjt-figure-lupa-svg{
+    fill: white;
+}
+.our-pjt-figure-link-ref:hover  .our-pjt-figure-link-svg{
+    fill: white;
+}
+
+.our-pjt-figure-img{
+    display: block;
+    width: 370px;
+    height: 237px;
+}
+
+.our-pjt-figure-caption{
+    padding: 30px 30px 30px 30px; //12,3,6,9.
+    background-color: #fbfaf8;
+
+    //Будем размещать декоративный треугольник с position:absolute.
+    position: relative; 
+}
+.our-pjt-figure-caption:before{ //Это декоративный треугольник.
+    content: "";
+    display: inline-block;
+    //background-color: darkgreen;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    border: 15px solid transparent; //Ширина рамки 20px и она не видима
+    border-bottom: 15px solid #fbfaf8; //Видим только нижний кусок рамки(треугольник)
+}
+
+.our-pjt-figure-title{
+    display: block;
+    font-family: Raleway, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #c7b299;
+    margin-bottom: 15px;
+}
+
+.our-pjt-figure-comment{
+    display: block;
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    font-size: 14px;
+    color: #d1d1d1;
+    
+}
+
+.our-pjt-button-load-more{  
+    .ref-button-type1;
+    border: none;
+ }
+.our-pjt-button-load-more:hover{ .ref-button-type1-hover; }
+.our-pjt-button-load-more:active{  .ref-button-type1-active; }
+.our-pjt-button-load-more:focus{ //После того как отпустили кнопку.
+    outline: none;
+}

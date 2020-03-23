@@ -102,15 +102,18 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.header-top-bar {
+  margin-top: 40px;
+  margin-left: 376px;
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  position: absolute;
-  top: 40px;
-  left: 376px;
   color: white;
 }
 .header-logo-txt {
@@ -129,11 +132,8 @@ body {
 .header-logo:hover .header-logo-txt {
   color: navajowhite;
 }
-.header-top-bar {
-  margin-top: 55px;
-  margin-left: 776px;
-  display: flex;
-  align-items: center;
+.header-nav {
+  margin-left: 210px;
 }
 .header-nav-item {
   font-family: Montserrat, Verdana, sans-serif;
